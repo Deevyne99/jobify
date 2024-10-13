@@ -17,7 +17,8 @@ import { Input } from './ui/input'
 
 type CustomFormFieldProps = {
   name: string
-  control: Control
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  control: Control<any>
 }
 
 export function CustomFormField({ name, control }: CustomFormFieldProps) {
@@ -40,7 +41,8 @@ export function CustomFormField({ name, control }: CustomFormFieldProps) {
 
 type CustomFormSelectProps = {
   name: string
-  control: Control
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  control: Control<any>
   items: string[]
   labelText?: string
 }
